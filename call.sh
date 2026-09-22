@@ -3,13 +3,18 @@ chmod g+x call.sh
 x=rayy 
 echo $x 
 
-mkdir -p Cohorts 
-mkdir -p Courses 
+if [ -d "Cohorts" ]; then
+echo "The directory Cohorts exists"
+else
+mkdir Cohorts
+fi
 
-git add .
+#mkdir -p Courses 
 
-git status 
+#git add .
 
-git commit -m"Our script practice"
-git push 
+#git status 
+
+#git commit -m"Our script practice"
+#git push
 
